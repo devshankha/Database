@@ -1,0 +1,13 @@
+#A good example of a database join
+select employee.Name from employee JOIN orders ON employee.employeeid = orders.employeeid where employee.Name="David";
+
+#Another example of a database join
+select fname from employees JOIN offices on employees.officecode = offices.officecode where offices.country="USA";
+
+
+
+
+#Another example, here the above sql join is replaced with an inner query
+
+#select fname from employees JOIN offices on employees.officecode = offices.officecode where offices.country="USA";
+
